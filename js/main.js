@@ -67,7 +67,7 @@ function createPaginationButtons(currentPage, totalPages, category) {
   // Prev
   if (currentPage > 1) {
     const prevBtn = document.createElement('button');
-    prevBtn.textContent = 'Prev';
+    prevBtn.textContent = 'Page Précédente';
     prevBtn.addEventListener('click', () => {
       displayList(category, currentPage - 1);
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -77,14 +77,14 @@ function createPaginationButtons(currentPage, totalPages, category) {
 
   // Page x of y
   const pageInfo = document.createElement('span');
-  pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+  pageInfo.textContent = `Page ${currentPage} de ${totalPages}`;
   pageInfo.className = 'page-info';
   pagination.appendChild(pageInfo);
 
   // Next
   if (currentPage < totalPages) {
     const nextBtn = document.createElement('button');
-    nextBtn.textContent = 'Next';
+    nextBtn.textContent = 'Page Suivante';
     nextBtn.addEventListener('click', () => {
       displayList(category, currentPage + 1);
       window.scrollTo({ top: 0, behavior: 'smooth' });
