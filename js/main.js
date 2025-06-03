@@ -40,7 +40,7 @@ async function displayList(category = "top_rated") {
       tvCard.className = "tv-show";
       tvCard.dataset.tvid = result.id;
       tvCard.innerHTML = `
-        <h3>${result.name}</h3>
+        <h2>${result.name}</h2>
         <div class="tv-show__img">
           <img src="https://image.tmdb.org/t/p/w400${result.poster_path}">
           <div class="note">

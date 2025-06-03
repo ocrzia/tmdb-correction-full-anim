@@ -38,7 +38,7 @@ window.addEventListener('load', async () => {
     tvDetail.innerHTML = `
       <img src="https://image.tmdb.org/t/p/w200${poster_path}">
       <div class="tv-text">
-        <h2>${tagline}</h2>
+        <h3>${tagline}</h3>
         <p>${overview}</p>
         <p><strong>Date de sortie :</strong> ${first_air_date}</p>
         <p><strong>Nombre de saisons :</strong> ${number_of_seasons}</p>
