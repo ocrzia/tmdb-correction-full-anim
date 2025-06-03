@@ -208,3 +208,29 @@ main {
     font-size: 1.5rem;
   }
 }
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pagination button {
+  padding: 15px;
+  border: none;
+  background-color: #639;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: rgb(68, 31, 105);
+}
+
+.page-info {
+  font-weight: bold;
+  color: #222;
+}
